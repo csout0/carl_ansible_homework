@@ -29,6 +29,7 @@ job_template_aws_provision: "Provision Prod Env"
 aws_provision_playbook: aws_provision.yml
 ec2_dynamic_inventory: "Three tier inventory"
 aws_ssh_playbook: aws_creds.yml
+opentlc_cred_name: "Opentlc key"
 sso_cred_name: "SSO key"
 sso_login: csouth-stonedoorgroup.com
 sso_password: Crimson17!
