@@ -17,7 +17,7 @@ workflow_template_name: cicd_workflow
 job_template_name_osp_instances: create-osp-instances
 osp_instances_playbook: site-osp-instances.yml
 group_name: workstation
-host_name: workstation-{{osp_GUID}}.rhpds.opentlc.com
+host_name: workstation-7090.rhpds.opentlc.com
 job_template_name_3tier_app: "3tier app deployment"
 app_deploy_playbook: site-3tier-app.yml
 vault_name: yum_repo_vault
@@ -30,6 +30,8 @@ aws_provision_playbook: aws_provision.yml
 ec2_dynamic_inventory: "Three tier inventory"
 aws_ssh_playbook: aws_creds.yml
 sso_cred_name: "SSO key"
+sso_login: csouth-stonedoorgroup.com
+sso_password: Crimson17!
 job_template_aws_ssh_keys: "SSH keys three tier app"
 ec2_inventory_source: "Three tier inventory source"
 aws_read_keys: "AWS Access Keys"
@@ -43,4 +45,4 @@ job_template_name_3tier_app_aws: "3 tier app on Prod"
 aws_cred_name: "Creds for AWS instances"
 job_template_smoke_aws: "Smoke test Prod env"
 aws_smoke_app_playbook: site-smoketest-aws.yml
-
+path_to_sso_key: /root/.ssh/mykey.pem
